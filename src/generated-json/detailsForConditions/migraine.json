@@ -8,11 +8,6 @@
       "darkModeImageUrl": "",
       "altText": "here image for Migraine"
     },
-    "icon": {
-      "imageUrl": "/non-existent-image.png",
-      "darkModeImageUrl": "",
-      "altText": "here image for Migraine"
-    },
     "label": "migraine",
     "urlSlug": "migraine",
     "name": "Migraine",

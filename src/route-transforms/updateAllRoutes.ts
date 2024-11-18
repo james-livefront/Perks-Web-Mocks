@@ -1,12 +1,5 @@
-<<<<<<< HEAD
 import mockServerData from "../mockoon_env.final.json";
 import { setAccessControlHeaders } from "../utils/setAccessControlHeaders";
-||||||| parent of 693c036 (add support for `create-image` endpoint)
-import mockServerData from "../mockoonFile.json";
-=======
-import mockServerData from "../mockoonFile.json";
-import { allowAllHeaderTypes } from "../utils/allowAllHeaderTypes";
->>>>>>> 693c036 (add support for `create-image` endpoint)
 import { toExpressDynamicEndpoint } from "../utils/toExpressDynamicEndpoint";
 import { addMockDataToCondition } from "./add-mock-data-to-route/conditionLegacy";
 import { addMockDataToConditions } from "./add-mock-data-to-route/conditions";
@@ -18,12 +11,7 @@ import { addMockDataPostGuestVisitInteraction } from "./add-mock-data-to-route/p
 
 /** Updates each route's config (if necessary) and adds type safe mock data. */
 export const updateAllRoutes = () => {
-<<<<<<< HEAD
   setAccessControlHeaders(mockServerData);
-||||||| parent of 693c036 (add support for `create-image` endpoint)
-=======
-  allowAllHeaderTypes(mockServerData);
->>>>>>> 693c036 (add support for `create-image` endpoint)
   mockServerData.routes.forEach((route) => {
     // Update OpenAPI dynamic routes to Express.js dynamic routes
     if (route.endpoint.includes("{")) {

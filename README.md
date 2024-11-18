@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-# Perks-Web-Mocks
-Mocks that support development for Perks Web
-||||||| parent of 5c07e07 (add readme)
-=======
 # Optum Perks Online Care Mock Data Config
 
 This repo contains code for generating a JSON file we can feed to Mockoon CLI to get Online Care API spec compliant data back.
@@ -34,17 +29,6 @@ If the spec is updated and we need to get the mock server in sync with it, compl
 3. Make the necessary fixes for any type errors in our [responses](./src/responses) and [mock data](./src/mock-data) files.
 4. Feed the new bundled spec file you used in step one to the Mockoon desktop app and see all of the routes populate.
 5. Click on the three dots in the configuration you just created (in the farthest left panel) and click "Copy configuration to clipboard (JSON)".
-<<<<<<< HEAD
-6. Replace the current [Mockoon JSON file](./src/mockoonFile.json) with the JSON you just copied to your clipboard.
-7. Run `npm run write-data` to make the necessary changes to the new config file.
-8. Run `npx mockoon-cli start -d ./src/mockoonFile.json` and make sure the mock server is working by hitting the unchanged routes and the routes that had updates at [http://localhost:3005/api/v1](http://localhost:3005/api/v1).
->>>>>>> 5c07e07 (add readme)
-||||||| parent of e523d7d (Adds script to make each example avaiable via its name as a path param)
-6. Replace the current [Mockoon JSON file](./src/mockoonFile.json) with the JSON you just copied to your clipboard.
-7. Run `npm run write-data` to make the necessary changes to the new config file.
-8. Run `npx mockoon-cli start -d ./src/mockoonFile.json` and make sure the mock server is working by hitting the unchanged routes and the routes that had updates at [http://localhost:3005/api/v1](http://localhost:3005/api/v1).
-=======
 6. Replace the current [Mockoon JSON file](./src/mockoon_env.final.json) with the JSON you just copied to your clipboard.
 7. Run `npm run pipeline` to make the necessary changes to the new config file.
 8. Run `npx mockoon-cli start -d ./src/mockoon_env.final.json` and make sure the mock server is working by hitting the unchanged routes and the routes that had updates at [http://localhost:3005/api/v1](http://localhost:3005/api/v1).
->>>>>>> e523d7d (Adds script to make each example avaiable via its name as a path param)
